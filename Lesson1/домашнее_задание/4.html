@@ -27,8 +27,12 @@
 -->
 <script>
   "use strict";
+  let myNumber = Number(prompt('Введите число :'));
+  let rank100 = Math.floor((myNumber % 1000)/100);
+  let rank10 = Math.floor((myNumber % 100)/10);
+  let rank1 = Math.floor((myNumber % 10));
+  console.log(`В числе ${myNumber} количество сотен: ${rank100}, десятков: ${rank10}, единиц: ${rank1}`);
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
 </script>
 </body>
 </html>
