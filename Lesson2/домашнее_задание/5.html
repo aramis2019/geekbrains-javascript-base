@@ -32,7 +32,73 @@ Infinity делать не нужно, однако, в случае если б
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  
+   /**
+   * Вычисление суммы
+   * @param {number} a - Первое число.
+   * @param {number} b - Второе число.
+   * @return {number} Сумма чисел.
+   */
+   let mySum = function(a,b){
+    return a+b;
+  } 
+
+   /**
+   * Вычисление разницы чисел
+   * @param {number} a - Первое число.
+   * @param {number} b - Второе число.
+   * @return {number} Разница чисел.
+   */
+  let myDifference = function(a,b){
+    if(a>b){
+      return a-b;
+    } 
+      return b-a;
+  } 
+
+  /**
+  * Вычисление произведения
+  * @param {number} a - Первое число.
+  * @param {number} b - Второе число.
+  * @return {number} Проиведение чисел.
+  */
+  let myMultiplication = function(a,b){
+    return a*b;
+  } 
+
+   /**
+   * Функция вычисляте 
+   * @param {number} a - Первое число.
+   * @param {number} b - Второе число.
+   * @return {number} Частное чисел.
+   */
+  let myDivision = function(a,b){
+    return a/b;
+  } 
+
+  /**
+  * Функция возвращает результат операции, который был передан в параметр operation для двух первых аргументов (arg1 и arg2).
+  * @param {number} arg1 - Первый аргумент.
+  * @param {number} arg2 - Второй аргумент.
+  * @param {string} operation - Операция  "+", "-", "*", "/"
+  * @return {number} Результат операции.
+  */
+  let mathOperation = function(arg1, arg2, operation){
+
+    switch (operation) {
+      case "+": return mySum(arg1, arg2);
+      case "-": return myDifference(arg1, arg2);
+      case "*": return myMultiplication(arg1, arg2);
+      case "/": return myDivision(arg1, arg2);
+      default: return NaN;
+    }
+  }
+
+  console.log(mathOperation(5, 3, "+")); // 8
+  console.log(mathOperation(5, 3, ":)")); // NaN
+
+
+
 </script>
 </body>
 </html>
