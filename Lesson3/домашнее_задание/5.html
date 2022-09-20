@@ -21,7 +21,15 @@ for(…){/* здесь пусто */}
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  const compareAndLog = function(i) {
+    if(i < 10) {
+      console.log(i);
+      return true;
+    }
+    return false;
+  };
+
+  for(let i = 0; compareAndLog(i); i++){} 
 </script>
 </body>
 </html>
