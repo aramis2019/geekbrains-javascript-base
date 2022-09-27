@@ -86,7 +86,7 @@ const car3 = new Car('BMW'); // ключевое слово new делает э�
 const car4 = new Car('Toyota');
 car3.beep();
 
-// пример
+// пример call
 
 const obj4 = {
     name: 'Pavel'
@@ -101,3 +101,53 @@ function sayHello(){
 }
 
 sayHello.call(obj4); // передавая объект в метод call мы говорим что будет лежать в this
+
+//// пример Наследование
+
+function Person(name, gender) {
+    this.name = name;
+    this.gender = gender;
+}
+Person.prototype.sayName = function () {
+    console.log(`мое имя ${this.name}`);
+}
+function Employee (name, gender, position) {
+    Person.call(this, name, gender)
+    this.positin = position;
+}
+
+Employee.prototype = Object.create(Person.prototype); // указываем в методе что будет являтся прототипом
+// также получаем доступ ко всем мтодам котороые есть у Person
+
+Employee.prototype.constuctor = Employee; // Хороший тон указывать конструктор. 
+// тогда при вызове emp1.constructor будет указано от какого конструктора создан объект.
+// Конструктор это свойство которое содержит ссылку на функцию.
+Employee.prototype.sayPosition = function () {
+    console.log(`моя должность ${this.positin}`);
+}
+
+const emp1 = new Employee('Pavel','m', 'Director');
+emp1.sayName();
+emp1.sayPosition();
+
+//// Тоже самое но с использованем классов.
+class Person1{
+    constructor(name, gender) {
+        this.name = name;
+        this.gender = gender;
+    }
+    sayName = function () {
+        console.log(`мое имя ${this.name}`);
+    }
+}
+
+class Employee1 extends Person1 {
+
+    constructor(name, gender, position){
+        super(name, gender); // Здесь вызовем конструктор базового класса
+        this.positin=position;
+    } 
+    sayPosition = function () {
+        console.log(`моя должность ${this.positin}`);
+    }
+}
