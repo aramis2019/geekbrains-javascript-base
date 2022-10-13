@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test-id">
+        <h1>Test page</h1>
+        <div class="test-class">
+        <p>Lorem ipsum dolor 1</p>
+        <p>Lorem ipsum dolor 2</p>
+        <p>Lorem ipsum dolor 3</p>
+        <p>Lorem ipsum dolor 4</p>
+        </div>
+        <hr>
+        <div class="test-class">
+            <p>Lorem ipsum dolor </p>
+            <p>Lorem ipsum dolor </p>
+        </div>
+     </div>
+     <div class="test-class2">Hello <span style="display:none;">World</span> 
+        <h2>Hello from HTML</h2>>
+    </div>
+    <script>
+        'use strict';
+
+        console.log(document.getElementById('test-id'));
+        //console.dir(document);
+        console.log(document.getElementsByClassName('test-class'));
+
+        // it is better use new methods .querySelector
+        console.log(document.querySelector('.test-class')); // get only first element
+        console.log(document.querySelector('.test-class:last-child'));
+
+        console.log(document.querySelectorAll('p'));
+        console.log(document.querySelectorAll('p:nth-child(even)'));
+        console.log(document.querySelectorAll('div.asd')); // give me all div with class asd
+
+        /****************/
+        const htmlColl = document.getElementsByTagName('p'); // dinamic collection
+        const nodeColl = document.querySelectorAll('p'); // static collection
+
+        /****************/
+        const nodeColl2 = document.querySelectorAll('p'); 
+        for(let i = 0; i < nodeColl2.length; i ++){
+            console.log(nodeColl2[i]);
+        }
+
+        for(const el of nodeColl2){
+            console.log(el);
+        }
+        
+        /****************/
+        //document.body;
+        //document.title;
+        //document.head;
+        //document.links;
+        //documents.images;
+        //document.documentElement; //html
+
+
+        /****************/
+        // https://developer.mozilla.org/ru/docs/Web/API/Element
+        // Element extends Node
+
+        const divEl = document.querySelector('.test-class:last-child');
+        const els = divEl.children;
+        const nodes = divEl.childNodes; // dinamic collection
+
+        /****************/
+        const firstDiv = document.querySelector('.test-class');
+        console.log(firstDiv.querySelector('p:last-child'));
+
+        /******* innerText *********/
+        const divEl2 = document.querySelector('.test-class2');
+        console.log(divEl2.innerText);
+        console.log(divEl2.textContent);
+        console.log(divEl2.innerHTML);
+        divEl2.innerText = 'Hi!'
+
+        /*******Create element *********/
+        const divEl3 = document.querySelector('.test-class2');
+        const h2el = document.createElement('h2');
+        h2el.textContent = 'Hello from js';
+        divEl3.appendChild(h2el);
+
+
+    </script>
+
+</body>
+</html>

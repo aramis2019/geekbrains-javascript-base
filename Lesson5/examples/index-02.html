@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="test-class2">Hello <span style="display:none;">World</span> 
+    </div>
+    <h2>Hello from HTML</h2>
+    <script>
+        'use strict';
+
+        
+        /*******Move element *********/
+
+        // const divEl = document.querySelector('.test-class2');
+        // const divH2 = document.querySelector('h2');
+        // divEl.appendChild(divH2);
+
+        /*******Clone element *********/
+
+        const divEl = document.querySelector('.test-class2');
+        const divH2 = document.querySelector('h2');
+        const cloneH2 = divH2.cloneNode(true);
+        divEl.appendChild(cloneH2);
+
+    </script>
+
+</body>
+</html>

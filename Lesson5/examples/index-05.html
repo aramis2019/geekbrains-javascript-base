@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="super-button" class="btn btn-large">btn</button>
+    
+    <div class="product" data-lang="russion" data-number="4545">
+        Lorem1
+    </div>
+    
+    <script>
+       'use strict';
+
+       /******************/
+       const btnEl = document.querySelector('#super-button');
+
+       console.log(btnEl.className);
+       //btnEl.className = 'new';
+       console.log(btnEl.classList);
+
+       btnEl.classList.add('new2');
+       btnEl.classList.toggle('btn-large');
+       btnEl.classList.contains('btn-large');
+       console.log(btnEl.id);
+
+
+       /*******getAttribute***********/
+       const divEl = document.querySelector('.product');
+       console.log(divEl.getAttribute('data-lang'));
+       divEl.setAttribute('data-lang','english');
+
+       console.log(divEl.attributes);
+
+       console.log(divEl.dataset);
+       console.log(divEl.dataset.lang);
+       divEl.dataset.number = 11;
+       divEl.dataset.hello = 'hi';
+
+    </script>
+
+</body>
+</html>

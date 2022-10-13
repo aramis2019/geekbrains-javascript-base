@@ -1,0 +1,60 @@
+﻿
+CSS Selector: https://learn.javascript.ru/css-selectors
+
+
+Document
+	https://developer.mozilla.org/ru/docs/Web/API/Document
+
+Класс Node
+	https://developer.mozilla.org/ru/docs/Web/API/Node
+	
+Интерфейс Element
+	https://developer.mozilla.org/ru/docs/Web/API/Element
+	
+Element.insertAjacentHTML
+	https://developer.mozilla.org/ru/docs/Web/API/Element/insertAdjacentHTML
+	
+Element.insertAjacentText
+	https://developer.mozilla.org/ru/docs/Web/API/Element/insertAdjacentText
+	
+Интерфейс Events
+	https://developer.mozilla.org/en-US/docs/Web/API/Event
+
+Все виды событий
+	https://developer.mozilla.org/ru/docs/Web/Events
+	
+Добавить или удалить атрибут
+	https://developer.mozilla.org/ru/docs/Web/API/Element/setAttribute
+	
+Валидация формы с бутстрапом
+	http://getbootstrap.com/docs/4.1/components/forms/#validation
+	
+Событие change
+	https://developer.mozilla.org/en-US/docs/Web/Events/change
+	
+Событие input
+	https://developer.mozilla.org/en-US/docs/Web/Events/input
+	
+Событие cut
+	https://developer.mozilla.org/en-US/docs/Web/Events/cut
+	
+Событие copy
+	https://developer.mozilla.org/en-US/docs/Web/Events/copy
+	
+Событие paste
+	https://developer.mozilla.org/en-US/docs/Web/Events/paste
+	
+Событие submit
+	https://developer.mozilla.org/ru/docs/Web/Events/submit
+
+Что такое цикломатическая сложность
+	http://codengineering.ru/post/42
+
+Роберт Мартин "Чистый код"
+	https://www.ozon.ru/context/detail/id/5011068/
+
+Информация про принцип единой ответственности
+	https://bit.ly/2ZtkUdR
+
+Анимации animate.css
+	https://daneden.github.io/animate.css/
