@@ -1,0 +1,35 @@
+Number.toString()
+	https://mzl.la/2rcETPe
+	
+HTMLElement.dataset
+	https://developer.mozilla.org/ru/docs/Web/API/HTMLElement/dataset
+
+Event reference
+	https://developer.mozilla.org/ru/docs/Web/Events
+
+HTMLMedia?Element
+	https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement
+
+Проигрыватель Plyr
+	https://plyr.io/
+
+Слайдер jssor (просто для изучения возможностей)
+	https://www.jssor.com/
+
+FlexSlider 2
+	http://flexslider.woothemes.com/
+
+Animate css
+	https://daneden.github.io/animate.css/
+
+События анимации
+	https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/animationend_event
+
+Css свойство animation-fill mode
+	https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+
+Sweet alert
+	https://sweetalert2.github.io/#examples
+
+Примеры сторонних библиотек
+	https://speckyboy.com/top-50-javascript/
