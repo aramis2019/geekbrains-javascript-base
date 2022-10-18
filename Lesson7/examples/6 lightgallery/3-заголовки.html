@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lightgallery.js-master/dist/css/lightgallery.min.css">
+    <style>
+        p {
+            font-size: 20px !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caption1" style="display:none">
+        <h2>Заголовок 1</h2><p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+    </div>      
+    <div class="caption2" style="display:none">
+        <h2>Заголовок 2</h2><p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+    </div>      
+    <div class="caption3" style="display:none">
+        <h2>Заголовок 3</h2><p>A gorgeous Sunset tonight captured at Coniston Water....</p>
+    </div>      
+
+    <div id="lightgallery">
+        <a href="https://picsum.photos/id/237/1200/1300" data-sub-html=".caption1">
+            <img src="https://picsum.photos/id/237/200/300">
+        </a>
+        <a href="https://picsum.photos/id/236/1200/1300" data-sub-html=".caption2">
+            <img src="https://picsum.photos/id/236/200/300">
+        </a>
+        <a href="https://picsum.photos/id/235/1200/1300" data-sub-html=".caption3">
+            <img src="https://picsum.photos/id/235/200/300">
+        </a>
+    </div>
+
+    <script src="lightgallery.js-master/dist/js/lightgallery.min.js"></script>
+    
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery')); 
+    </script>
+
+    <!-- https://sachinchoolur.github.io/lightgallery.js/demos/captions.html -->
+</body>
+
+</html>

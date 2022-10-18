@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="vanillajs-datepicker-master/dist/css/datepicker.min.css">
+</head>
+
+<body>
+    <input type="text" name="foo">
+
+    <script src="vanillajs-datepicker-master/dist/js/datepicker.min.js"></script>
+    <script src="vanillajs-datepicker-master/dist/js/locales/ru.js"></script>
+    <script>
+        'use strict';
+        const elem = document.querySelector('input[name="foo"]');
+        const datepicker = new Datepicker(elem, {
+            format: 'dd.mm.yyyy',
+            nextArrow: '<i class="far fa-arrow-alt-circle-right"></i>',
+            prevArrow: '<i class="far fa-arrow-alt-circle-left"></i>',
+            todayBtn: true,
+            language: 'ru',
+        });
+    </script>
+</body>
+
+</html>

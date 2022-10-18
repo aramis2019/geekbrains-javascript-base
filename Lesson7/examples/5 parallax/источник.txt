@@ -1,0 +1,9 @@
+﻿Библиотека
+    https://github.com/wagerfield/parallax
+
+Этот пример
+    https://www.youtube.com/watch?v=LMygHD-rnbA
+    https://github.com/TheDesignMedium/planets-animated-website
+
+Где можно взять картинки
+	https://www.freepik.com/

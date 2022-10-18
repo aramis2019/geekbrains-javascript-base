@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function game(){
+            let color = 'black';
+            const availableColors = ['black','pink','gray','brown'];
+            let score =0;
+
+            function getColor(){
+                return color;
+            }
+
+            function isCorrectColor(color){
+                return availableColors.includes(color);
+                //for(let i =0; i< availableColors.length; i++)
+            }
+
+            function changeColor(newColor){
+                if(!isCorrectColor(newColor)){
+                    throw new Error('wrong color');
+                }
+
+                color = newColor;
+            }
+
+            function getScore(){
+                return score;
+            }
+
+            function inScore(){
+                score ++;
+            }
+
+            return {
+                getColor, // getColor:getColor
+                changeColor,
+                getScore,
+                inScore    
+            };
+        }
+
+        const myGame = game();
+
+    </script>
+
+</body>
+</html>

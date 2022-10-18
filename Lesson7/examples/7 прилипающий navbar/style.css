@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+nav {
+  background: lightseagreen;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  font-family: sans-serif;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.content {
+  font-size: 20px;
+}
+
+img {
+  display: block;
+}
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}

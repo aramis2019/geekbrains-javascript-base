@@ -7,6 +7,7 @@ const volumeEl = document.querySelector('.volume');
 const timingEl = document.querySelector('.timing');
 const currentTimeEl = document.querySelector('.currentTime');
 
+
 playBtnEl.addEventListener('click', () => {
   videoEl.play();
 });
@@ -16,7 +17,7 @@ pauseBtnEl.addEventListener('click', () => {
 });
 
 videoEl.addEventListener('timeupdate', event => {
-  currentTimeEl.innerText = videoEl.currentTime;
+  currentTimeEl.innerText = videoEl.currentTime.toFixed(2);
   timingEl.value = videoEl.currentTime / videoEl.duration * 100;
 });
 

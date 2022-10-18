@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fullPage.js-master/dist/fullpage.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="fullpage">
+        <div class="section">
+            <h2>Заголовок 1</h2>
+        </div>
+        <div class="section">
+            <img class="fullimage" src="https://picsum.photos/1920/1080?random=1">
+        </div>
+        <div class="section">
+            <h2>Заголовок 3</h2>
+        </div>
+        <div class="section">
+            <img class="fullimage" src="https://picsum.photos/1920/1080?random=2">
+        </div>
+    </div>
+
+    <script src="../fullPage.js-master/dist/fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            // если true, то будут видны навигационные точки справа
+            navigation: true,
+        });
+    </script>
+</body>
+
+</html>

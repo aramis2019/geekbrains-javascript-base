@@ -7,10 +7,15 @@ function Slider(selector, width, height) {
   }
 }
 
+// function Slider(selector, options = {}) {
+//   this.sliderWidth = options.width ?? 720;
+//   this.sliderHeight = options.height ?? 480;
+// }
+
 Slider.prototype.init = function () {
   // Ставим слайдеру нужный размер.
-  this.sliderEl.style.width = this.sliderWidth;
-  this.sliderEl.style.height = this.sliderHeight;
+  this.sliderEl.style.width = `${this.sliderWidth}px`;
+  this.sliderEl.style.height = `${this.sliderHeight}px`;
 
   // Создаем иконку загрузки
   this.loadIcon = document.createElement('i');
@@ -30,6 +35,33 @@ Slider.prototype.init = function () {
   this.slides = document.querySelectorAll('.slider-item');
   this.slideIdx = 0;
 
+  const run = () =>{
+    this.leftArrow.addEventListener('click', () => {
+      console.log('leftArrow')
+      this.setNextLeftImage();
+    });
+
+    this.rightArrow.addEventListener('click', () => {
+      console.log('rightArrow')
+      this.setNextRightImage();
+    });
+
+    this.slides[this.slideIdx].classList.remove('hidden-slide');
+  }
+
+  const firstImg = this.slides[this.slideIdx].querySelector('img');
+
+  if(firstImg.complete){
+    run();
+    return;
+  }
+
+  firstImg.addEventListener('load', ()=>{
+    this.loadIcon.remove();
+    run();
+  })
+
+  /*
   // Ждем когда загрузится весь контент
   window.addEventListener('load', () => {
     // Добавляем обработчик для левой стрелки
@@ -45,6 +77,7 @@ Slider.prototype.init = function () {
     // Удаляем спинер загрузки
     this.loadIcon.remove();
   });
+  */
 };
 
 Slider.prototype.setNextLeftImage = function () {

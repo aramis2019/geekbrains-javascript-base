@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cropperjs-master/dist/cropper.min.css">
+    <style>
+        div {
+            height: 50vh;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img id="image" src="https://picsum.photos/1200/1300" alt="">
+    </div>
+    
+
+    <script src="cropperjs-master/dist/cropper.min.js"></script>
+
+   
+
+    <form action="" method="post">
+
+
+        <button>Отправить на сервер</button>
+    </form>
+
+    <script>
+        'use strict';
+        const image = document.getElementById('image');
+        let cropObj = {};
+        const cropper = new Cropper(image, {
+            aspectRatio: 16 / 9,
+            crop(event) {
+                console.log('------');
+                cropObj.x = event.detail.x;
+                cropObj.y = event.detail.y;
+                cropObj.width = event.detail.width;
+                cropObj.height = event.detail.height;
+            },
+        });
+
+        let formEl = document.querySelector('form');
+        formEl.addEventListener('submit', function() {
+            console.log(cropObj);
+            event.preventDefault();
+        });
+
+    </script>
+</body>
+
+</html>

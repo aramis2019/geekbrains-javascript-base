@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-container {
+    min-height: 50vh;
+}
+
+.swiper-slide {
+    padding: 10px;
+    text-shadow: 2px 2px 5px white;
+    font-size: 30px;
+    font-family: sans-serif;
+}

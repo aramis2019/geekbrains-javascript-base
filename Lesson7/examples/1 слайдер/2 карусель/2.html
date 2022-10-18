@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../packages/swiper-5.4.5/package/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/200?random=1">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, fuga.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/200?random=2">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis fuga, reiciendis pariatur nemo illum modi id cupiditate dignissimos unde molestias.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/200?random=3">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/200?random=4">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorum corporis aliquam explicabo fuga laudantium non saepe molestias vitae, consequuntur commodi, animi, magnam alias maxime.
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/200?random=5">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis necessitatibus adipisci asperiores vero ullam nulla?
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://picsum.photos/300/200?random=6">
+                <div>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa ex ad veniam minima!
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+    <script src="../packages/swiper-5.4.5/package/js/swiper.min.js"></script>
+
+    <script>
+        'use strict';
+        let mySwiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 20,
+
+            // Optional parameters
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+    </script>
+</body>
+
+</html>

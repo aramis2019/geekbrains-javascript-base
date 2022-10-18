@@ -26,7 +26,7 @@
 -->
 
 <input id="from" type="text">
-В инпуте написано: <span></span>
+В инпуте написано: <span>rrrr</span>
 
 <br>
 
@@ -66,6 +66,13 @@
   также должен меняться.
   */
 
+  const inputEl = document.querySelector('#from');
+  const spanEl = document.querySelector('span');
+
+  inputEl.addEventListener('input', (event)=>{
+    spanEl.textContent = event.target.value
+  });
+
 
   /*
   2. При клике на кнопку с классом messageBtn необходимо элементу с классом
@@ -73,6 +80,15 @@
   1) добавить два класса: animate__animated и animate__fadeInLeftBig
   2) поставить данному элементу стиль visibility в значение 'visible'.
    */
+
+   const buttonEl = document.querySelector('.messageBtn');
+   const messageEl = document.querySelector('.message');
+   buttonEl.addEventListener('click',(event)=>{
+    messageEl.classList.add('animate__animated');
+    messageEl.classList.add('animate__fadeInLeftBig');
+    messageEl.style.visability = 'visible';
+    console.dir(messageEl);
+   })
 
 
   /*
@@ -86,6 +102,13 @@
   данному полю).
   Если поле было чем-либо заполнено, подсветку (класс error) необходимо убрать.
    */
+
+   const formEl = document.querySelector('form');
+
+   formEl.addEventListener('submit',(event)=>{
+
+    event.preventDefault();
+   })
 
 
 </script>

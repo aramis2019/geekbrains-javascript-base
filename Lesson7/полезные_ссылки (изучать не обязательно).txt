@@ -1,0 +1,37 @@
+Awewome js (подборка библиотек на js)
+	https://github.com/sorrycc/awesome-javascript
+	https://awesomejs.dev/
+
+Array.prototype.some()
+	https://mzl.la/2QvlI15
+	
+Object.assign()
+	https://mzl.la/2QcTh91
+	
+Object.getOwnPropertyNames()
+	https://mzl.la/2rhT59m
+	
+console.error()
+	https://mzl.la/2PerYpm
+	
+setInterval()
+	https://mzl.la/2SqNDg1
+	
+clearInterval()
+	https://mzl.la/2G6sPce
+	
+Math.floor()
+	https://mzl.la/2Qx42SO
+	
+Math.random()
+	https://mzl.la/2Sp2lnO
+
+Markdown cheat sheet
+	https://github.com/sandino/Markdown-Cheatsheet
+	https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+Отличие декларативного подхода от императивного
+	https://tproger.ru/translations/imperative-declarative-programming-concepts/
+
+Бесплатный векторный редактор
+	https://inkscape.org/ru/

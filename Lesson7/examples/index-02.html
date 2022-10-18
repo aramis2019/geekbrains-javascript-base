@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        /********Destructurisation**********/
+         const arr1 = [1,5,8] ;
+        //  const a = arr1[0];
+        //  const b = arr1[1];
+         const [a,b] = arr1;
+         console.log(a, b); // 1 5
+
+         const [c, ,d] = arr1;
+         console.log(c, d); // 1 8
+
+         /********Destructurisation with objects**********/
+
+         const obj = {r: 5, n: 20, m: 30};
+         const {r, m} = obj;
+         console.log(r, m); // 5 30
+
+         /********Destructurisation with objects**********/
+         function f2({r,m: mParam=100}){
+            console.log(r, mParam); // 5 30
+         }
+         const obj2 = {r: 5, n: 20, m: 30};
+         f2(obj2);
+
+          /********Destructurisation event**********/
+
+          document.querySelector('button').addEventListener('click', ({target}) => {
+            console.log(target.textContent);
+          });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag and Drop example</title>
+</head>
+<body>
+<div class="draggable_elements_container">
+  <p>Перетащи меня</p>
+  <p>И меня</p>
+</div>
+<div class="drop_container">Перетаскивать сюда</div>
+
+<script>
+  // Простой пример.
+  const dragContainer = document.querySelector('.draggable_elements_container');
+  const dropContainer = document.querySelector('.drop_container');
+
+  // Ставим элементы draggable
+  [...dragContainer.children].forEach(el => el.draggable = true);
+
+  // Когда начинаем переносить элемент, ставим ему класс dragged
+  dragContainer.addEventListener(`dragstart`, event => {
+    event.target.classList.add(`dragged`);
+  });
+
+  // Когда завершаем перенос элемента, убираем у него класс dragged
+  dragContainer.addEventListener(`dragend`, event => {
+    event.target.classList.remove(`dragged`);
+  });
+
+  // Разрешаем помещать элементы в эту область
+  dropContainer.addEventListener('dragover', event => {
+    event.preventDefault();
+  });
+
+  // При переносе элемента, перенсим его.
+  dropContainer.addEventListener(`drop`, event => {
+    const draggedEl = dragContainer.querySelector(`.dragged`);
+    dropContainer.append(draggedEl);
+  });
+
+  // Можно также использовать api DataTransfer:
+  // https://developer.mozilla.org/ru/docs/Web/API/DataTransfer
+  // MDN по DnD:
+  // https://developer.mozilla.org/ru/docs/Web/API/HTML_Drag_and_Drop_API
+</script>
+</body>
+</html>

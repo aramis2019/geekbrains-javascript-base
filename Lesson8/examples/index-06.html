@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>MyButton</button>
+    <script>
+        'use strict';
+
+        class User {
+            constructor(name){
+                this.name;
+            }
+
+            init(){
+                const buttonEl = document.querySelector('button');
+                //buttonEl.addEventListener('click', this.sayThis()); // wrong way
+                //buttonEl.addEventListener('click', this.sayThis); // wrong: this - button
+                //buttonEl.addEventListener('click', function(){ this.sayThis(); }); // wrong: this - button
+
+                //buttonEl.addEventListener('click', ()=>{ this.sayThis(); }); // correct!! - this - user
+
+                console.log(this);
+                buttonEl.addEventListener('click', this.sayThis.bind(this) ); // correct - this - user
+
+                buttonEl.addEventListener('click', this.sayThis2 );// correct - this - user
+            }
+
+            sayThis(){ // will be in prototype
+                console.log(this);
+            }
+
+            sayThis2 = () => {  // will be created for each object, when user created
+                console.log(this);
+            }
+        }
+
+        const user = new User('Pavel'); 
+        user.init();
+
+        
+    </script>
+
+</body>
+</html>

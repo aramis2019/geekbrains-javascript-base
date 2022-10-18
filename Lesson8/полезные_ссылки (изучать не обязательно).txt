@@ -1,0 +1,46 @@
+﻿Анонимные функции
+	https://mzl.la/2E7Ftp8
+	
+Замыкания
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures
+	
+Функции обратного вызова
+	https://mzl.la/2QdQexf
+	
+IIFE
+	https://metanit.com/web/javascript/3.3.php
+	
+This
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this
+	
+Call
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/call
+	
+Apply
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
+	
+Bind
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
+	
+Оператор in
+	https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/in
+
+Хорошая серия статей по функциональному программированию
+	https://medium.com/devschacht/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-1-6ef98e90d58d
+
+Дополнительные задачки по Js
+	https://www.codewars.com/?language=javascript
+
+Программы для просмотра отличий в файлах
+	http://kdiff3.sourceforge.net/
+	https://winmerge.org/?lang=ru
+	или расширение "partial diff" для visual studio code
+
+Typescript
+	https://www.typescriptlang.org/
+
+Новые приватные свойства в Javascript и как их использовать
+	https://www.sitepoint.com/javascript-private-class-fields/
+
+Web skills
+	https://andreasbm.github.io/web-skills/?compact

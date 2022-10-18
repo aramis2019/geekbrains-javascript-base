@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../packages/swiper-5.4.5/package/css/swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <div class="parallax-bg" style="background-image:url(https://picsum.photos/2600/720?random=1)"
+                data-swiper-parallax="-23%"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <h2>1 Lorem ipsum dolor sit.</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2>2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2>3 Lorem, ipsum dolor.</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, dolore!</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2>5 Lorem ipsum dolor sit.</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h2>6 Lorem ipsum dolor sit, amet consectetur adipisicing.</h2>
+                </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <script src="../packages/swiper-5.4.5/package/js/swiper.min.js"></script>
+
+    <script>
+        'use strict';
+        let mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            loop: true,
+            parallax: true,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+    </script>
+</body>
+
+</html>
